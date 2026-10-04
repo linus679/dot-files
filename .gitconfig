@@ -4,3 +4,8 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = linus679
+	email = linus679@users.noreply.github.com
+[credential]
+	helper = store

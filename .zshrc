@@ -4,13 +4,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Path
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.odin:$PATH
 
 # Oh My Zsh installation
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="bira"
 
 # Auto-update behavior
 zstyle ':omz:update' mode auto
@@ -121,6 +121,11 @@ alias myip='curl -s ifconfig.me'
 alias reload='source ~/.zshrc'
 alias zshconfig='${EDITOR:-nvim} ~/.zshrc'
 alias p10kconfig='${EDITOR:-nvim} ~/.p10k.zsh'
+
+# ── Colors (Nord dircolors) ─────────────────────────────────────
+
+# Nord palette for ls/completion; falls back silently if file missing
+[[ -f ~/.dir_colors ]] && eval "$(dircolors -b ~/.dir_colors)"
 
 # ── Key Bindings ────────────────────────────────────────────────
 
