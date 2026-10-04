@@ -10,7 +10,8 @@ links=(
   ".bashrc|$HOME/.bashrc"
   ".bash_profile|$HOME/.bash_profile"
   ".tmux.conf|$HOME/.tmux.conf"
-  "alacritty.toml|$HOME/.config/alacritty/alacritty.toml"
+  ".dir_colors|$HOME/.dir_colors"
+  "alacritty|$HOME/.config/alacritty"
 )
 
 for entry in "${links[@]}"; do
@@ -21,7 +22,7 @@ for entry in "${links[@]}"; do
     echo "Backing up existing $target to $target.bak"
     mv "$target" "$target.bak"
   fi
-  ln -sf "$DOTFILES_DIR/$src" "$target"
+  ln -sfn "$DOTFILES_DIR/$src" "$target"
   echo "Linked $src -> $target"
 done
 
