@@ -1,3 +1,13 @@
+# Active theme. Swap the import to change palette:
+#   themes/adwaita-light.toml  (matches the XFCE Adwaita GTK theme)
+#   themes/adwaita-dark.toml
+#   themes/nord.toml
+[general]
+import = ["themes/adwaita-light.toml"]
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+
 [font]
 size = 11
 
