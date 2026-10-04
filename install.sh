@@ -12,6 +12,7 @@ links=(
   ".tmux.conf|$HOME/.tmux.conf"
   ".dir_colors|$HOME/.dir_colors"
   "alacritty|$HOME/.config/alacritty"
+  "ghostty|$HOME/.config/ghostty"
 )
 
 for entry in "${links[@]}"; do

@@ -1,0 +1,6 @@
+# Follows the system light/dark preference. Light matches the XFCE Adwaita GTK theme.
+theme = light:Adwaita,dark:Adwaita Dark
+
+# Same font as alacritty
+font-family = MesloLGS Nerd Font Mono
+font-size = 11

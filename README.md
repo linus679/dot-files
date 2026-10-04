@@ -7,7 +7,7 @@ Run `./install.sh` to symlink everything into place. Existing non-symlink target
 | `.zshrc`, `.bashrc`, `.bash_profile` | `~/` |
 | `.gitconfig`, `.tmux.conf`, `.dir_colors` | `~/` |
 | `alacritty/` | `~/.config/alacritty/` |
-| `ghostty/theme.ghostty` | referenced from `~/.config/ghostty/config` via `config-file` |
+| `ghostty/` | `~/.config/ghostty/` |
 
 ## Alacritty theme
 
